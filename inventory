@@ -1,7 +1,7 @@
 [web_servers]
 192.168.2.37 ansible_user=tony
-192.168.2.42 ansible_user=toby 
+192.168.2.45 ansible_user=toby 
 
 [db_servers]
-192.168.2.41 ansible_user=tommy 
-192.168.2.43 ansible_user=timmy
+192.168.2.44 ansible_user=tommy 
+192.168.2.46 ansible_user=timmy

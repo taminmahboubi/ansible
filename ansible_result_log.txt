@@ -1,0 +1,139 @@
+ansible [core 2.16.3]
+  config file = /home/nathalie/ansible/ansible.cfg
+  configured module search path = ['/home/nathalie/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/nathalie/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.12.3 (main, Nov  6 2024, 18:32:19) [GCC 13.2.0] (/usr/bin/python3)
+  jinja version = 3.1.2
+  libyaml = True
+Using /home/nathalie/ansible/ansible.cfg as config file
+host_list declined parsing /home/nathalie/ansible/inventory as it did not pass its verify_file() method
+script declined parsing /home/nathalie/ansible/inventory as it did not pass its verify_file() method
+auto declined parsing /home/nathalie/ansible/inventory as it did not pass its verify_file() method
+Parsed /home/nathalie/ansible/inventory inventory source with ini plugin
+Skipping callback 'default', as we already have a stdout callback.
+Skipping callback 'minimal', as we already have a stdout callback.
+Skipping callback 'oneline', as we already have a stdout callback.
+<192.168.2.37> ESTABLISH SSH CONNECTION FOR USER: tony
+<192.168.2.37> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' 192.168.2.37 '/bin/sh -c '"'"'echo ~tony && sleep 0'"'"''
+<192.168.2.45> ESTABLISH SSH CONNECTION FOR USER: toby
+<192.168.2.45> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' 192.168.2.45 '/bin/sh -c '"'"'echo ~toby && sleep 0'"'"''
+<192.168.2.44> ESTABLISH SSH CONNECTION FOR USER: tommy
+<192.168.2.44> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' 192.168.2.44 '/bin/sh -c '"'"'echo ~tommy && sleep 0'"'"''
+<192.168.2.45> (0, b'/home/toby\n', b'')
+<192.168.2.45> ESTABLISH SSH CONNECTION FOR USER: toby
+<192.168.2.45> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' 192.168.2.45 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/toby/.ansible/tmp `"&& mkdir "` echo /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682 `" && echo ansible-tmp-1737900117.1328998-795-2865039368682="` echo /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682 `" ) && sleep 0'"'"''
+<192.168.2.43> ESTABLISH SSH CONNECTION FOR USER: timmy
+<192.168.2.43> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="timmy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/7d6d7a53bd"' 192.168.2.43 '/bin/sh -c '"'"'echo ~timmy && sleep 0'"'"''
+<192.168.2.44> (0, b'/home/tommy\n', b'')
+<192.168.2.44> ESTABLISH SSH CONNECTION FOR USER: tommy
+<192.168.2.44> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' 192.168.2.44 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/tommy/.ansible/tmp `"&& mkdir "` echo /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942 `" && echo ansible-tmp-1737900117.1454623-797-106728352836942="` echo /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942 `" ) && sleep 0'"'"''
+<192.168.2.45> (0, b'ansible-tmp-1737900117.1328998-795-2865039368682=/home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682\n', b'')
+<192.168.2.44> (0, b'ansible-tmp-1737900117.1454623-797-106728352836942=/home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942\n', b'')
+<192.168.2.43> (255, b'', b'timmy@192.168.2.43: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).\r\n')
+192.168.2.43 | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: timmy@192.168.2.43: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).",
+    "unreachable": true
+}
+<192.168.2.45> Attempting python interpreter discovery
+<192.168.2.45> ESTABLISH SSH CONNECTION FOR USER: toby
+<192.168.2.45> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' 192.168.2.45 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'python3.12'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.11'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.10'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.9'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.8'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+<192.168.2.44> Attempting python interpreter discovery
+<192.168.2.44> ESTABLISH SSH CONNECTION FOR USER: tommy
+<192.168.2.44> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' 192.168.2.44 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'python3.12'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.11'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.10'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.9'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.8'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+<192.168.2.45> (0, b'PLATFORM\nLinux\nFOUND\n/usr/bin/python3.12\n/usr/bin/python3\nENDFOUND\n', b'')
+<192.168.2.45> ESTABLISH SSH CONNECTION FOR USER: toby
+<192.168.2.45> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' 192.168.2.45 '/bin/sh -c '"'"'/usr/bin/python3.12 && sleep 0'"'"''
+<192.168.2.44> (0, b'PLATFORM\nLinux\nFOUND\n/usr/bin/python3.12\n/usr/bin/python3\nENDFOUND\n', b'')
+<192.168.2.44> ESTABLISH SSH CONNECTION FOR USER: tommy
+<192.168.2.44> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' 192.168.2.44 '/bin/sh -c '"'"'/usr/bin/python3.12 && sleep 0'"'"''
+<192.168.2.45> (0, b'{"platform_dist_result": [], "osrelease_content": "PRETTY_NAME=\\"Ubuntu 24.04.1 LTS\\"\\nNAME=\\"Ubuntu\\"\\nVERSION_ID=\\"24.04\\"\\nVERSION=\\"24.04.1 LTS (Noble Numbat)\\"\\nVERSION_CODENAME=noble\\nID=ubuntu\\nID_LIKE=debian\\nHOME_URL=\\"https://www.ubuntu.com/\\"\\nSUPPORT_URL=\\"https://help.ubuntu.com/\\"\\nBUG_REPORT_URL=\\"https://bugs.launchpad.net/ubuntu/\\"\\nPRIVACY_POLICY_URL=\\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\\"\\nUBUNTU_CODENAME=noble\\nLOGO=ubuntu-logo\\n"}\n', b'')
+Using module file /usr/lib/python3/dist-packages/ansible/modules/ping.py
+<192.168.2.45> PUT /home/nathalie/.ansible/tmp/ansible-local-790pf0r1qo5/tmp345tx08p TO /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682/AnsiballZ_ping.py
+<192.168.2.45> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' '[192.168.2.45]'
+<192.168.2.44> (0, b'{"platform_dist_result": [], "osrelease_content": "PRETTY_NAME=\\"Ubuntu 24.04.1 LTS\\"\\nNAME=\\"Ubuntu\\"\\nVERSION_ID=\\"24.04\\"\\nVERSION=\\"24.04.1 LTS (Noble Numbat)\\"\\nVERSION_CODENAME=noble\\nID=ubuntu\\nID_LIKE=debian\\nHOME_URL=\\"https://www.ubuntu.com/\\"\\nSUPPORT_URL=\\"https://help.ubuntu.com/\\"\\nBUG_REPORT_URL=\\"https://bugs.launchpad.net/ubuntu/\\"\\nPRIVACY_POLICY_URL=\\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\\"\\nUBUNTU_CODENAME=noble\\nLOGO=ubuntu-logo\\n"}\n', b'')
+Using module file /usr/lib/python3/dist-packages/ansible/modules/ping.py
+<192.168.2.44> PUT /home/nathalie/.ansible/tmp/ansible-local-790pf0r1qo5/tmp9gsssqvl TO /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942/AnsiballZ_ping.py
+<192.168.2.44> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' '[192.168.2.44]'
+<192.168.2.45> (0, b'sftp> put /home/nathalie/.ansible/tmp/ansible-local-790pf0r1qo5/tmp345tx08p /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682/AnsiballZ_ping.py\n', b'')
+<192.168.2.45> ESTABLISH SSH CONNECTION FOR USER: toby
+<192.168.2.45> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' 192.168.2.45 '/bin/sh -c '"'"'chmod u+x /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682/ /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682/AnsiballZ_ping.py && sleep 0'"'"''
+<192.168.2.44> (0, b'sftp> put /home/nathalie/.ansible/tmp/ansible-local-790pf0r1qo5/tmp9gsssqvl /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942/AnsiballZ_ping.py\n', b'')
+<192.168.2.44> ESTABLISH SSH CONNECTION FOR USER: tommy
+<192.168.2.44> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' 192.168.2.44 '/bin/sh -c '"'"'chmod u+x /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942/ /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942/AnsiballZ_ping.py && sleep 0'"'"''
+<192.168.2.45> (0, b'', b'')
+<192.168.2.45> ESTABLISH SSH CONNECTION FOR USER: toby
+<192.168.2.45> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' -tt 192.168.2.45 '/bin/sh -c '"'"'/usr/bin/python3 /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682/AnsiballZ_ping.py && sleep 0'"'"''
+<192.168.2.44> (0, b'', b'')
+<192.168.2.44> ESTABLISH SSH CONNECTION FOR USER: tommy
+<192.168.2.44> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' -tt 192.168.2.44 '/bin/sh -c '"'"'/usr/bin/python3 /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942/AnsiballZ_ping.py && sleep 0'"'"''
+<192.168.2.45> (0, b'\r\n{"ping": "pong", "invocation": {"module_args": {"data": "pong"}}}\r\n', b'Shared connection to 192.168.2.45 closed.\r\n')
+<192.168.2.45> ESTABLISH SSH CONNECTION FOR USER: toby
+<192.168.2.45> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="toby"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/433084efd4"' 192.168.2.45 '/bin/sh -c '"'"'rm -f -r /home/toby/.ansible/tmp/ansible-tmp-1737900117.1328998-795-2865039368682/ > /dev/null 2>&1 && sleep 0'"'"''
+<192.168.2.44> (0, b'\r\n{"ping": "pong", "invocation": {"module_args": {"data": "pong"}}}\r\n', b'Shared connection to 192.168.2.44 closed.\r\n')
+<192.168.2.44> ESTABLISH SSH CONNECTION FOR USER: tommy
+<192.168.2.44> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tommy"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/5444e47dd1"' 192.168.2.44 '/bin/sh -c '"'"'rm -f -r /home/tommy/.ansible/tmp/ansible-tmp-1737900117.1454623-797-106728352836942/ > /dev/null 2>&1 && sleep 0'"'"''
+<192.168.2.45> (0, b'', b'')
+192.168.2.45 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    },
+    "ping": "pong"
+}
+<192.168.2.44> (0, b'', b'')
+192.168.2.44 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    },
+    "ping": "pong"
+}
+<192.168.2.37> (0, b'/home/tony\n', b'')
+<192.168.2.37> ESTABLISH SSH CONNECTION FOR USER: tony
+<192.168.2.37> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' 192.168.2.37 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/tony/.ansible/tmp `"&& mkdir "` echo /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438 `" && echo ansible-tmp-1737900118.0872698-794-44389149185438="` echo /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438 `" ) && sleep 0'"'"''
+<192.168.2.37> (0, b'ansible-tmp-1737900118.0872698-794-44389149185438=/home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438\n', b'')
+<192.168.2.37> Attempting python interpreter discovery
+<192.168.2.37> ESTABLISH SSH CONNECTION FOR USER: tony
+<192.168.2.37> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' 192.168.2.37 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'python3.12'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.11'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.10'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.9'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.8'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+<192.168.2.37> (0, b'PLATFORM\nLinux\nFOUND\n/usr/bin/python3.12\n/usr/bin/python3\nENDFOUND\n', b'')
+<192.168.2.37> ESTABLISH SSH CONNECTION FOR USER: tony
+<192.168.2.37> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' 192.168.2.37 '/bin/sh -c '"'"'/usr/bin/python3.12 && sleep 0'"'"''
+<192.168.2.37> (0, b'{"platform_dist_result": [], "osrelease_content": "PRETTY_NAME=\\"Ubuntu 24.04.1 LTS\\"\\nNAME=\\"Ubuntu\\"\\nVERSION_ID=\\"24.04\\"\\nVERSION=\\"24.04.1 LTS (Noble Numbat)\\"\\nVERSION_CODENAME=noble\\nID=ubuntu\\nID_LIKE=debian\\nHOME_URL=\\"https://www.ubuntu.com/\\"\\nSUPPORT_URL=\\"https://help.ubuntu.com/\\"\\nBUG_REPORT_URL=\\"https://bugs.launchpad.net/ubuntu/\\"\\nPRIVACY_POLICY_URL=\\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\\"\\nUBUNTU_CODENAME=noble\\nLOGO=ubuntu-logo\\n"}\n', b'')
+Using module file /usr/lib/python3/dist-packages/ansible/modules/ping.py
+<192.168.2.37> PUT /home/nathalie/.ansible/tmp/ansible-local-790pf0r1qo5/tmp908zyg44 TO /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438/AnsiballZ_ping.py
+<192.168.2.37> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' '[192.168.2.37]'
+<192.168.2.37> (0, b'sftp> put /home/nathalie/.ansible/tmp/ansible-local-790pf0r1qo5/tmp908zyg44 /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438/AnsiballZ_ping.py\n', b'')
+<192.168.2.37> ESTABLISH SSH CONNECTION FOR USER: tony
+<192.168.2.37> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' 192.168.2.37 '/bin/sh -c '"'"'chmod u+x /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438/ /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438/AnsiballZ_ping.py && sleep 0'"'"''
+<192.168.2.37> (0, b'', b'')
+<192.168.2.37> ESTABLISH SSH CONNECTION FOR USER: tony
+<192.168.2.37> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' -tt 192.168.2.37 '/bin/sh -c '"'"'/usr/bin/python3 /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438/AnsiballZ_ping.py && sleep 0'"'"''
+<192.168.2.37> (0, b'\r\n{"ping": "pong", "invocation": {"module_args": {"data": "pong"}}}\r\n', b'Shared connection to 192.168.2.37 closed.\r\n')
+<192.168.2.37> ESTABLISH SSH CONNECTION FOR USER: tony
+<192.168.2.37> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o 'IdentityFile="/home/nathalie/.ssh/ansible"' -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="tony"' -o ConnectTimeout=10 -o 'ControlPath="/home/nathalie/.ansible/cp/20a8b80ae9"' 192.168.2.37 '/bin/sh -c '"'"'rm -f -r /home/tony/.ansible/tmp/ansible-tmp-1737900118.0872698-794-44389149185438/ > /dev/null 2>&1 && sleep 0'"'"''
+<192.168.2.37> (0, b'', b'')
+192.168.2.37 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "invocation": {
+        "module_args": {
+            "data": "pong"
+        }
+    },
+    "ping": "pong"
+}
