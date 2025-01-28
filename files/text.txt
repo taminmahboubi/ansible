@@ -1,0 +1,2 @@
+this is a random textfile,
+used for testing sending a file to a server.
