@@ -51,6 +51,14 @@
       group: root
       mode: 0644
 
+  - name: copy random text file to servers
+    copy:
+      src: text.txt
+      dest: /home/textfile.txt
+      owner: root
+      group: root
+      mode: 0644
+
 - hosts: db_servers
   become: true
   tasks:
