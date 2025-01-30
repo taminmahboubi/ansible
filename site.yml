@@ -25,6 +25,15 @@
     tags:
       - motd
 
+- hosts: all
+  become: true
+  tasks:
+
+  - name: create user sally
+    tags: always
+    user:
+      name: sally
+      groups: root
 
 - hosts: web_servers
   become: true
