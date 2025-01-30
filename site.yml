@@ -35,6 +35,23 @@
       name: sally
       groups: root
 
+  - name: add ssh key for sally
+    tags: always
+    authorized_key:
+      user: sally
+      key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHh1P7cOlnwLrIB+2oup3Nk5ZYUM40KGdWp/QNss8vfJ ansible"
+
+  - name: add sudoers file for sally
+    tags: always 
+    copy:
+      src: sudoer_sally
+      dest: /etc/sudoers.d/sally
+      owner: root
+      group: root
+      mode: 0440 
+
+
+
 - hosts: web_servers
   become: true
   tasks:
